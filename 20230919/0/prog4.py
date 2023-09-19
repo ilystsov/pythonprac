@@ -1,0 +1,1 @@
+print(1, 2, 3, end='[poiu]'); print('qwe','ASD')
