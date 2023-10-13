@@ -14,6 +14,10 @@ matrix.append(s)
 n = len(matrix[0])
 m = len(matrix)
 volume = gas_quantity + liquid_quantity
+
+old_liquid_quantity = liquid_quantity
+old_gas_quantity = gas_quantity
+
 liquid_quantity = (m - 2) * math.ceil(liquid_quantity / (m - 2))
 gas_quantity = volume - liquid_quantity
 print(m * '#')
@@ -22,6 +26,10 @@ for i in range(gas_quantity // (m - 2)):
 for i in range(liquid_quantity // (m - 2)):
     print('#' + '~' * (m - 2) + '#')
 print(m * '#')
+
+liquid_quantity = old_liquid_quantity
+gas_quantity = old_gas_quantity
+
 m = max(gas_quantity, liquid_quantity)
 fraction_space = len(str(volume)) + len(str(m)) + 1
 print(f"{round((gas_quantity / m) * 20) * '.':<20}", f"{f'{gas_quantity}/{volume}':>{fraction_space}}")
