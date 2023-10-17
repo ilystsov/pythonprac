@@ -1,0 +1,1 @@
+print(" ".join(dict(zip(s := input().split(), s))))
