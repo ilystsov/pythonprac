@@ -1,0 +1,6 @@
+:powpow x y z d pow(x,pow(y,z+d))
+:decorate a b "{}+{}=?".format(a,b)
+decorate "five" "seven"
+powpow 2 2 2 1
+powpow 1 9 5 -1
+quit "functions number: {}, lines number: {}\nDone!"
