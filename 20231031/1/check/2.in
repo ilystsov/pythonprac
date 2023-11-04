@@ -1,0 +1,10 @@
+a, b, c = Omnibus(), Omnibus(), Omnibus()
+del a.q, a.u, b.q
+a.q = 1
+a.b = 'p'
+print(a.q, a.b)
+c.q = 324
+c.t = 0
+print(a.q, c.q, c.t)
+del a.q
+print(c.q)
