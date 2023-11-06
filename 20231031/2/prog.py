@@ -48,7 +48,8 @@ class Triangle:
     def __and__(self, obj):
         if isclose(abs(obj), 0) or isclose(abs(self), 0):
             return False
-
+        if self in obj or obj in self:
+            return True
         self_edges = [(self.point1, self.point2), (self.point2, self.point3), (self.point3, self.point1)]
         obj_edges = [(obj.point1, obj.point2), (obj.point2, obj.point3), (obj.point3, obj.point1)]
 
@@ -89,4 +90,3 @@ class Intersection:
 
 import sys
 exec(sys.stdin.read())
-
