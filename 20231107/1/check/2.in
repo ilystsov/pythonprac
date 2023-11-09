@@ -1,0 +1,4 @@
+s = DivStr()
+print(* s // 3, end='', sep='')
+print(* s % 3, end='', sep='')
+print(s + 'Done!')

@@ -1,0 +1,5 @@
+a = DivStr('abcdef')
+print(* a // 6)
+print(* a // 3)
+print(a.upper())
+print(a % 3)
