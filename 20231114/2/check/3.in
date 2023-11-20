@@ -1,0 +1,15 @@
+class C:
+    num = Num()
+
+class D:
+    real = 2
+    def __len__(self):
+        return 3
+
+c = C()
+d = D()
+c.num = d
+print(c.num is d)
+del D.real
+c.num = D()
+print(c.num)

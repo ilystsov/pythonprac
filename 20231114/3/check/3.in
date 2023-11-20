@@ -1,0 +1,23 @@
+for Cls in [Alpha, AlphaQ]: 
+    try:
+        alp = Cls(a = 1, b = 2, cd = 3)
+    except AttributeError:
+        print('ok')
+    alp = Cls(a = 1)
+    print(alp.a)
+    try:
+        alp.b
+    except AttributeError:
+        print('ok')
+    alp.b = 2
+    print(alp.b)
+    try:
+        alp.cd = 3
+    except AttributeError:
+        print('ok')
+    try:
+        alp.cd
+    except AttributeError:
+        print('ok')
+    
+

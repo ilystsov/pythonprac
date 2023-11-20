@@ -1,0 +1,16 @@
+@objcount
+class C:
+    def __init__(self):
+        print('init')
+    def __del__(self):
+        print('del')
+
+print(C.counter)
+c1 = C()
+c1 = 0
+print(C.counter)
+c2, c3, c4 = C(), C(), C()
+c2 = c3 = -1
+print(C.counter)
+c4 = 1
+print(C.counter)

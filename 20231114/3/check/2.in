@@ -1,0 +1,25 @@
+from timeit import timeit
+from string import ascii_lowercase
+
+snippet_alp = """
+alps = []
+for _ in range(500):
+    alps.append(Alpha())
+for alp in alps:
+    for letter in ascii_lowercase:
+        setattr(alp, letter, letter)
+"""
+
+snippet_alq = """
+alqs = []
+for _ in range(500):
+    alqs.append(AlphaQ())
+for alq in alqs:
+    for letter in ascii_lowercase:
+        setattr(alq, letter, letter)
+"""
+
+time_alp = timeit(snippet_alp, number = 1000, globals = globals())
+time_alq = timeit(snippet_alq, number = 1000, globals = globals())
+
+print(time_alp < time_alq)
