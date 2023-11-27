@@ -1,4 +1,7 @@
 *~
 tmp*
 tmp/
+*swo
+*swp
 __pycache__
+.idea/
