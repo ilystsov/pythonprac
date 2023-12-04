@@ -1,0 +1,6 @@
+__init__: ('Peter',), {'surname': 'Griffin'}
+__enter__: (), {}
+Howdy, Peter
+Hehehehe
+__exit__: (None, None, None), {}
+Farewell, Peter Griffin

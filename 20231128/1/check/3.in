@@ -1,0 +1,12 @@
+class C(metaclass=dump):
+    def __init__(self, name, surname=None):
+        self.name = name
+        self.surname = surname
+    def __enter__(self):
+        print('Howdy,', self.name)
+    def __exit__(self, *args):
+        print('Farewell,', self.name, self.surname)
+
+with C('Peter', surname='Griffin') as obj:
+    print('Hehehehe')
+

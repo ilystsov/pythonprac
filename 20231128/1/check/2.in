@@ -1,0 +1,6 @@
+class C(metaclass=dump):
+    def __repr__(self, arg1, arg2, kwarg1=1, kwarg2=None):
+        pass 
+
+C()
+C().__repr__(True, 'hfel', kwarg2=97)

@@ -1,0 +1,24 @@
+  Эта программа вычисляет e
+        store 100 i
+        store 1 I
+lop:
+        store 1 f
+        store 9
+loop
+        store gentlemen k
+        out k
+
+  Переменные e и n коварно не объявляем — в них по умолчанию 0
+
+loop:   div I f a
+        add e a e
+        add e a e a
+жжжжжжжжжжжжжжжжжжжжжжжж
+        add n I n
+        
+        mul f n f
+        
+        sub i I i
+        ifge i I loop
+        out e out i
+        out e 
