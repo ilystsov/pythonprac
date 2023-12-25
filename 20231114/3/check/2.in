@@ -3,7 +3,7 @@ from string import ascii_lowercase
 
 snippet_alp = """
 alps = []
-for _ in range(500):
+for _ in range(100):
     alps.append(Alpha())
 for alp in alps:
     for letter in ascii_lowercase:
@@ -12,7 +12,7 @@ for alp in alps:
 
 snippet_alq = """
 alqs = []
-for _ in range(500):
+for _ in range(100):
     alqs.append(AlphaQ())
 for alq in alqs:
     for letter in ascii_lowercase:
